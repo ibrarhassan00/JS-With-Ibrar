@@ -78,7 +78,7 @@ let str3 = str1 + str2
 // console.log("1" + 2); // 12
 // console.log(1 + "2"); // 12 
 // console.log("1" + 2 + 2); // 122
-// console.log(1 + 2 + "2"); // 32
+// console.log(1 + 2 + "2"); // 32 is simple nahi rule hai 1st jo bhi type hoga agy sub y wahi consider kare ga
 
 // console.log( (3 + 4) * 5 % 3); 
 
