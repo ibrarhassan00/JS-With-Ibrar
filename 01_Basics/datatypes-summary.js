@@ -1,4 +1,4 @@
-                                   // 1) Primitive Datatypes
+                                   // 1) Primitive Datatypes ( Stack )
 
 // Number => number
 // String  => string
@@ -8,12 +8,6 @@
 // Symbol  =>  symbol
 // BigInt  =>  bigint
 
-                                // 2) Non-primitive Datatypes
-
-// Arrays  =>  object
-// Function  =>  objectFunction
-// Object  =>  object
-
 let myYouTubeName = "ibrar";
 let anotherName = myYouTubeName;
 anotherName="hassan";
@@ -21,9 +15,17 @@ anotherName="hassan";
 console.log(myYouTubeName); // ibrar
 console.log(anotherName); // hassan
 
+
+                                // 2) Non-primitive Datatypes ( Heap )
+
+// Arrays  =>  object
+// Function  =>  objectFunction
+// Object  =>  object
+
+
 let userOne = {
     email:"ibrar@gmail.com",
-upi:"user@ybl",
+    upi:"user@ybl",
 }
 
 let userTow=userOne;
