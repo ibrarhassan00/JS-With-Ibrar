@@ -146,6 +146,54 @@
 
 //------------------------------------------------------8th------------------------------------------------------------------
 
-let newvariable : string|number|boolean = true;
+// let newvariable : string|number|boolean = true;
 
-console.log(newvariable);
+// console.log(newvariable);
+
+//----------------------------------------------------------9th-------------------------------------------------------------
+
+// type student ={
+//     name:string;
+//     rollNumber:number;
+// }
+
+// type teacher={
+
+//     name:string;
+//     experiance:number;
+// }
+
+// let student1:student={
+
+//     name:"ibrar",
+//     rollNumber: 5,
+// }
+
+// let teacher1:teacher={
+//     name:"hassan",
+//     experiance:123
+// }
+
+// console.log(`this is stutdent details ${student1} and this is a teacher details ${teacher1}`);
+
+//-------------------------------------By Using intersection singh & we put value all 02 types-------------------------------------------
+//-------------------------------------common proties interction ek bar utha ta hai.------------------------------------------------
+//---------------------------------abhi ky case name common hai -------------------------------------------------------------------
+
+type student ={
+    name:string;
+    rollNumber:number;
+}
+
+type teacher={
+
+    name:string;
+    experiance:number;
+}
+
+
+let both1 :student & teacher={
+    name:"zaid",
+    experiance:25,
+    rollNumber:4321,
+}
