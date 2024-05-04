@@ -42,30 +42,55 @@
 // )
 //-------------------------------------------------------2nd-------------------------------------------------------------
 
-type User = {
+// type User = {
 
-name:string;
-age:number;
-role:string;
+// name:string;
+// age:number;
+// role:string;
 
-children : {
-      name:string;
-      age : number;   
-}
+// children : {
+//       name:string;
+//       age : number;   
+// }
 
-}
+// }
 
-let user5 : User = {
-    name:"ibrar",
-    age : 23,
-    role:"betular",
-    children:{
-        name :" boy",
-        age : 1,
-    }
-};
+// let user5 : User = {
+//     name:"ibrar",
+//     age : 23,
+//     role:"betular",
+//     children:{
+//         name :" boy",
+//         age : 1,
+//     }
+// };
 
-console.log(user5.children);
+// console.log(user5.children);
 
 //----------------------------------------------------------------3rd----------------------------------------------------------
 
+
+type User = {
+
+    name:string;
+    age:number;
+    role:string;
+    
+    children ?: {
+          name:string;
+          age : number;   
+    }
+    
+    }
+    
+    let user6 : User = {
+        name:"ibrar",
+        age : 23,
+        role:"betular",
+        // children:{
+        //     name :" boy",
+        //     age : 1,
+        // }
+    };
+    
+    console.log(user6);
