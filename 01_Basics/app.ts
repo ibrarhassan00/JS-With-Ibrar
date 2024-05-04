@@ -70,6 +70,34 @@
 //----------------------------------------------------------------3rd----------------------------------------------------------
 
 
+// type User = {
+
+//     name:string;
+//     age:number;
+//     role:string;
+    
+//     children ?: {
+//           name:string;
+//           age : number;   
+//     }
+    
+//     }
+    
+//     let user6 : User = {
+//         name:"ibrar",
+//         age : 23,
+//         role:"betular",
+//         // children:{
+//         //     name :" boy",
+//         //     age : 1,
+//         // }
+//     };
+    
+//     console.log(user6);
+
+//--------------------------------------4th------------------------------------------------------------------------
+
+
 type User = {
 
     name:string;
@@ -78,19 +106,22 @@ type User = {
     
     children ?: {
           name:string;
-          age : number;   
+          age ?: number;   
     }
     
     }
     
-    let user6 : User = {
-        name:"ibrar",
+    let user7 : User = {
+        name:"ibar",
         age : 23,
-        role:"betular",
-        // children:{
-        //     name :" boy",
-        //     age : 1,
-        // }
+        role:"son",
+
+        children :{
+            name :" boy",
+        }
     };
     
-    console.log(user6);
+    console.log(user7.children?.name);
+
+    //--------------------------------------------------5th-------------------------------------------------------------
+

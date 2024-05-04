@@ -2,13 +2,14 @@
 //     name : string;
 //     age : number;
 //     role : string;
-var user6 = {
-    name: "ibrar",
+var _a;
+var user7 = {
+    name: "ibar",
     age: 23,
-    role: "betular",
-    // children:{
-    //     name :" boy",
-    //     age : 1,
-    // }
+    role: "son",
+    children: {
+        name: " boy",
+    }
 };
-console.log(user6);
+console.log((_a = user7.children) === null || _a === void 0 ? void 0 : _a.name);
+//--------------------------------------------------5th-------------------------------------------------------------
