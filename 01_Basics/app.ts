@@ -98,30 +98,54 @@
 //--------------------------------------4th------------------------------------------------------------------------
 
 
-type User = {
+// type User = {
 
-    name:string;
-    age:number;
-    role:string;
+//     name:string;
+//     age:number;
+//     role:string;
     
-    children ?: {
-          name:string;
-          age ?: number;   
-    }
+//     children ?: {
+//           name:string;
+//           age ?: number;   
+//     }
     
-    }
+//     }
     
-    let user7 : User = {
-        name:"ibar",
-        age : 23,
-        role:"son",
+//     let user7 : User = {
+//         name:"ibar",
+//         age : 23,
+//         role:"son",
 
-        children :{
-            name :" boy",
-        }
-    };
+//         children :{
+//             name :" boy",
+//         }
+//     };
     
-    console.log(user7.children?.name);
+//     console.log(user7.children?.name);
 
     //--------------------------------------------------5th-------------------------------------------------------------
 
+//--------------------------------Type Littrels-------------------------------------------------------------------------
+
+// let trafficlight:"Red"="Red";
+// let age:18 = 18;
+
+//-------------------------------------------------------6th- Using Pipe Singh -----------------------------------------------
+
+// let trafficlight1:"Red"|"Yellow"|"Green"="Green";
+// let age1:18 = 18;
+
+// console.log(trafficlight1);
+
+//------------------------------------------------------7th----string+numner----------------------------------------------
+
+// let trafficlight2:"Red"|"Yellow"|"Green"|52 ="Green";
+// let age2:18 = 18;
+
+// console.log(trafficlight2);
+
+//------------------------------------------------------8th------------------------------------------------------------------
+
+let newvariable : string|number|boolean = true;
+
+console.log(newvariable);
