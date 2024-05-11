@@ -35,12 +35,18 @@ var both1 = {
 // let fruits : string[]=[`mango`,`orange`,`kiwi`]
 // fruits.shift()
 // console.log (fruits); // [ 'orange', 'kiwi' ]
-//------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------Slice oranginal arry ki coppy bana deta hai.-------------------------------------------------------------------------------
 // let fruits : string[]=[`mango`,`orange`,`kiwi`]
 // let arrySlice = fruits.slice() // y fuction arry ki copy banaraha hai
 // console.log(arrySlice);
 //--------------------------------------------------------------------------------------------
-var fruits = ["mango", "orange", "kiwi"];
-var arrySlice = fruits.slice(1); // y fuction arry ki copy banaraha hai
-console.log(arrySlice);
-console.log(fruits.slice(1, 2));
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+// let arrySlice = fruits.slice(1) // y fuction arry ki copy banaraha hai
+// console.log(arrySlice); // [ 'orange', 'kiwi' ]
+// console.log(fruits.slice(1,2)); // [ 'orange' ]
+//-------------------------------------------------------------------------------------------------------
+var fruits = ["mango", "orange", "kiwi", "Banana", "Apple", "pine apple"];
+fruits.splice(0, 1);
+fruits.splice(3, 2);
+console.log(fruits); // [ 'mango', 'kiwi' ]
+//----------------------------------------------------------------------------------------------------------------

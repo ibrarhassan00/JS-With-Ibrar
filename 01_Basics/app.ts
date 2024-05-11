@@ -273,4 +273,22 @@ let both1 :student & teacher={
 
 //-------------------------------------------------------------------------------------------------------
 
-let fruits : string[]=[`mango`,`orange`,`kiwi`] 
+// let fruits : string[]=[`mango`,`orange`,`kiwi`,`Banana`,`Apple`,`pine apple`] 
+
+// fruits.splice(0,1)
+// fruits.splice(3,2)
+
+// console.log(fruits) // [ 'mango', 'kiwi' ]
+
+//--------------------------------------------------syntex of intiate Array--------------------------------------------------------------
+
+ let fruits : string[] = [`ibrar`]
+ let newArry: Array<number> = [ 1,1,2,2,]
+
+ // ----------------------------------------------tupples allows limitation in array-----------------------------------------------------------------
+
+
+ let new1Array: [ string, number, string ] = [`ibrar`,1,`hassan`]
+ let new2Array: [ string, number, string? ] = [`ibrar`,1,]
+
+ 
