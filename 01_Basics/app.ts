@@ -200,19 +200,60 @@ let both1 :student & teacher={
 
 //-----------------------------------------------------------New Class 11-05-2024------------------------------
 
-let fruits : string[]=[`mango`,`orange`,`kiwi`]
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
 // console.log(fruits);
 
 // adding items in arry 
 
-fruits.push(`Banana`); 
+// fruits.push(`Banana`); 
 
 // console.log(fruits);// [ 'mango', 'orange', 'kiwi', 'Banana' ]
 
 // console.log(fruits[1]); // orange
 
+//--------------------------------------------------------------------------------------------------------------------
+
 // remove value from arry last element 
 
-fruits.pop() // [ 'mango', 'orange', 'kiwi' ] observe last element has been removed
+// fruits.pop() // [ 'mango', 'orange', 'kiwi' ] observe last element has been removed
 
 // console.log(fruits);
+
+//-----------------------------------------------------------------------------------------------------------------------
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+
+// let f1= fruits.pop() 
+
+// console.log(f1); // kiwi
+
+// console.log(fruits); // [ 'mango', 'orange' ]
+
+//------------------------------------------------------------------------------------------------------------------------
+
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+
+// console.log(fruits.length); // 3
+
+
+//--------------------------------------------------------------------------------------------------------------------
+
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+
+// fruits.unshift("grapes") // 
+
+// console.log(fruits); //[ 'grapes', 'mango', 'orange', 'kiwi' ]
+
+// shift ko try karna hai
+
+//------------------------------------------------------------------------------------------------------------------------
+
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+// fruits.shift()
+
+// console.log (fruits); // [ 'orange', 'kiwi' ]
+
+
+//------------------------------------------------------------------------------------------------------------------------
+
+
+

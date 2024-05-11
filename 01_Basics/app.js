@@ -8,12 +8,30 @@ var both1 = {
     rollNumber: 4321,
 };
 //-----------------------------------------------------------New Class 11-05-2024------------------------------
-var fruits = ["mango", "orange", "kiwi"];
-console.log(fruits);
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+// console.log(fruits);
 // adding items in arry 
-fruits.push("Banana");
-console.log(fruits); // [ 'mango', 'orange', 'kiwi', 'Banana' ]
-console.log(fruits[1]); // orange
+// fruits.push(`Banana`); 
+// console.log(fruits);// [ 'mango', 'orange', 'kiwi', 'Banana' ]
+// console.log(fruits[1]); // orange
+//--------------------------------------------------------------------------------------------------------------------
 // remove value from arry last element 
-fruits.pop();
+// fruits.pop() // [ 'mango', 'orange', 'kiwi' ] observe last element has been removed
+// console.log(fruits);
+//-----------------------------------------------------------------------------------------------------------------------
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+// let f1= fruits.pop() 
+// console.log(f1); // kiwi
+// console.log(fruits); // [ 'mango', 'orange' ]
+//------------------------------------------------------------------------------------------------------------------------
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+// console.log(fruits.length); // 3
+//--------------------------------------------------------------------------------------------------------------------
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+// fruits.unshift("grapes") // 
+// console.log(fruits); //[ 'grapes', 'mango', 'orange', 'kiwi' ]
+// shift ko try karna hai
+//------------------------------------------------------------------------------------------------------------------------
+var fruits = ["mango", "orange", "kiwi"];
+fruits.shift();
 console.log(fruits);
