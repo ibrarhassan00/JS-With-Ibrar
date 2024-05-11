@@ -12,4 +12,8 @@ var fruits = ["mango", "orange", "kiwi"];
 console.log(fruits);
 // adding items in arry 
 fruits.push("Banana");
+console.log(fruits); // [ 'mango', 'orange', 'kiwi', 'Banana' ]
+console.log(fruits[1]); // orange
+// remove value from arry last element 
+fruits.pop();
 console.log(fruits);
