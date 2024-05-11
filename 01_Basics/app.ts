@@ -253,7 +253,24 @@ let both1 :student & teacher={
 // console.log (fruits); // [ 'orange', 'kiwi' ]
 
 
-//------------------------------------------------------------------------------------------------------------------------
+//-----------------------------------------Slice oranginal arry ki coppy bana deta hai.-------------------------------------------------------------------------------
 
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
 
+// let arrySlice = fruits.slice() // y fuction arry ki copy banaraha hai
 
+// console.log(arrySlice);
+
+//--------------------------------------------------------------------------------------------
+
+// let fruits : string[]=[`mango`,`orange`,`kiwi`]
+
+// let arrySlice = fruits.slice(1) // y fuction arry ki copy banaraha hai
+
+// console.log(arrySlice); // [ 'orange', 'kiwi' ]
+
+// console.log(fruits.slice(1,2)); // [ 'orange' ]
+
+//-------------------------------------------------------------------------------------------------------
+
+let fruits : string[]=[`mango`,`orange`,`kiwi`] 
