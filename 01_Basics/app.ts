@@ -282,7 +282,7 @@ let both1 :student & teacher={
 
 //--------------------------------------------------syntex of intiate Array--------------------------------------------------------------
 
- let fruits : string[] = [`ibrar`]
+//  let fruits : string[] = [`ibrar`]
  let newArry: Array<number> = [ 1,1,2,2,]
 
  // ----------------------------------------------tupples allows limitation in array-----------------------------------------------------------------
@@ -291,4 +291,20 @@ let both1 :student & teacher={
  let new1Array: [ string, number, string ] = [`ibrar`,1,`hassan`]
  let new2Array: [ string, number, string? ] = [`ibrar`,1,]
 
- 
+
+//------------------------------------------------------------------------------------------------------------------
+
+
+let fruits : string[]=[`mango`,`orange`,`kiwi`,`grapes`,`Apple`,]
+
+// fruits.pop()
+// fruits.pop()
+
+// fruits.splice(3) // for same operation // fruits.splice(3,2)
+
+fruits.splice(1,1)
+fruits.splice(3,1)
+
+// orange and apple has been removed [ 'mango', 'kiwi', 'grapes' ]
+
+console.log(fruits);

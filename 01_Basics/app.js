@@ -45,8 +45,21 @@ var both1 = {
 // console.log(arrySlice); // [ 'orange', 'kiwi' ]
 // console.log(fruits.slice(1,2)); // [ 'orange' ]
 //-------------------------------------------------------------------------------------------------------
-var fruits = ["mango", "orange", "kiwi", "Banana", "Apple", "pine apple"];
-fruits.splice(0, 1);
-fruits.splice(3, 2);
-console.log(fruits); // [ 'mango', 'kiwi' ]
-//----------------------------------------------------------------------------------------------------------------
+// let fruits : string[]=[`mango`,`orange`,`kiwi`,`Banana`,`Apple`,`pine apple`] 
+// fruits.splice(0,1)
+// fruits.splice(3,2)
+// console.log(fruits) // [ 'mango', 'kiwi' ]
+//--------------------------------------------------syntex of intiate Array--------------------------------------------------------------
+//  let fruits : string[] = [`ibrar`]
+var newArry = [1, 1, 2, 2,];
+// ----------------------------------------------tupples allows limitation in array-----------------------------------------------------------------
+var new1Array = ["ibrar", 1, "hassan"];
+var new2Array = ["ibrar", 1,];
+//------------------------------------------------------------------------------------------------------------------
+var fruits = ["mango", "orange", "kiwi", "grapes", "Apple",];
+// fruits.pop()
+// fruits.pop()
+// fruits.splice(3) // for same operation // fruits.splice(3,2)
+fruits.splice(1, 1);
+fruits.splice(3, 1);
+console.log(fruits);
