@@ -25,9 +25,9 @@ console.log(myDate.getUTCSeconds());          // 49
 //----------------------------------------------------myDate1---------------------------------------------------------------
 
 let myDate1= new Date()
-let newDate=myDate1.setFullYear(2025);
-newDate=myDate1.toLocaleDateString()
-console.log(newDate)
+let newDate=myDate1.setFullYear(2025);   // 1747082259795 y return hai next line ise string main convert kia hai
+newDate=myDate1.toLocaleDateString()     // string convert or year update ky ouput 5/12/2025
+console.log(newDate) 
 
 //-----------------------------------------------------------myCreatedDate1,2,3----------------------------------------------------\
 
@@ -35,35 +35,37 @@ let myCreatedDate = new Date(2023, 0, 23)         //random
 let myCreatedDate1 = new Date(2023, 0, 23, 5, 3)   // random
 let myCreatedDate2 = new Date("2023-01-14")        // yymmdd
 let myCreatedDate3 = new Date("01-14-2023")        // mmddyy
-console.log(myCreatedDate.toLocaleString());
+console.log(myCreatedDate.toString());             // Mon Jan 23 2023 00:00:00 GMT+0000 (Coordinated Universal Time)
+console.log(myCreatedDate.toLocaleString());       // 1/23/2023, 12:00:00 AM
 
 // -------------------------------------------------------myTimeSatamp--------------------------------------------------------
 
 let myTimeStamp = Date.now()
-console.log(myTimeStamp);
-console.log(myCreatedDate.getTime());
-console.log(Math.floor(Date.now()/1000));
+console.log(myTimeStamp);                     // 1715546702584
+console.log(myCreatedDate.getTime());         // 1674432000000
+console.log((Date.now()/1000));               // 1715546702.59
+console.log(Math.floor(Date.now()/1000));    // 1715546702
 
 //--------------------------------------------------------myDate2--------------------------------------------------------------
  
 const myDate2 = new Date();
 let options = { weekday: 'long', year:'numeric', month: 'long', day: 'numeric' };
-console.log('myDate2.toLocaleString("en-US")', myDate.toLocaleString("en-US"));
-console.log('myDate2.toLocaleString("en-US")', myDate.toLocaleString("en-US", options));
+console.log('myDate2.toLocaleString("en-US")', myDate2.toLocaleString("en-US"));         //myDate2.toLocaleString("en-US") 5/12/2024, 8:46:35 PM
+console.log('myDate2.toLocaleString("en-US")', myDate2.toLocaleString("en-US", options));//myDate2.toLocaleString("en-US") Sunday, May 12, 2024
 
 //-------------------------------------------------------myDate3-----------------------------------------------------------
 
 let myDate3 = new Date();
 
 myDate3 = myDate3.toLocaleString('default', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    timeZoneName:'short',
+    weekday: 'long',       // Sunday
+    year: 'numeric',       // 2024
+    month: 'long',         // May 
+    day: 'numeric',        // 12
+    hour: 'numeric',       // 8
+    minute: 'numeric',     //47
+    second: 'numeric',     //44
+    timeZoneName:'short',  // UTC
 });
 
 console.log(myDate3);
@@ -73,13 +75,13 @@ console.log(myDate3);
 
 let myDate4 = new Date();
 
-console.log(myDate4.toDateString())
-console.log(myDate4.toISOString())
-console.log(myDate4.toJSON())
-console.log(myDate4.toLocaleDateString())
-console.log(myDate4.toLocaleString())
-console.log(myDate4.toLocaleTimeString())
-console.log(myDate4.toString())
-console.log(myDate4.toTimeString())
-console.log(myDate4.toUTCString())
-console.log(myDate4.toLocaleString("default",{timeZoneName:"short"}));
+console.log(myDate4.toDateString()) // Sun May 12 2024
+console.log(myDate4.toISOString())  // 2024-05-12T20:50:54.237Z
+console.log(myDate4.toJSON())       // 2024-05-12T20:50:54.237Z
+console.log(myDate4.toLocaleDateString())  // 5/12/2024
+console.log(myDate4.toLocaleString())      // 5/12/2024, 8:50:54 PM
+console.log(myDate4.toLocaleTimeString())  // 8:50:54 PM
+console.log(myDate4.toString())            // Sun May 12 2024 20:50:54 GMT+0000 (Coordinated Universal Time)
+console.log(myDate4.toTimeString())        // 20:50:54 GMT+0000 (Coordinated Universal Time)
+console.log(myDate4.toUTCString())         // Sun, 12 May 2024 20:50:54 GMT
+console.log(myDate4.toLocaleString("default",{timeZoneName:"short"}));  //  5/12/2024, 8:50:54 PM UTC
