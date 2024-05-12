@@ -9,7 +9,7 @@ let myDate = new Date() // for current date
 // console.log(myDate.getMonth());            // 4    q ky januanry 0 hota hai
 // console.log(myDate.getSeconds());          // 45
 // console.log(myDate.getTime());             // 1st january 1970 sy abtak y current time tak ka secound.
-console.log(myDate.getTimezoneOffset());
+// console.log(myDate.getTimezoneOffset());      // Agar aap UTC ka waqt (UTC+0) aur PKT ka waqt (UTC+5) dekhte hain, to aapko PKT ka waqt UTC ka waqt se 5 ghante aage milayga.  Iske baad aap is time difference ko minutes mein convert kar sakte hain. Ek ghanta mein 60 minutes hote hain, is tarah 5 ghante mein (5 * 60) = 300 minutes hote hain
 // console.log(myDate.getUTCDate());
 // console.log(myDate.getUTCDay());
 // console.log(myDate.toLocaleString());
