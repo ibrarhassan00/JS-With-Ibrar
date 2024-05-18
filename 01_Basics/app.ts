@@ -313,15 +313,31 @@ fruits.splice(3,1)
 
 //enum // alternate typelitters union ka
 
-enum color{Red,Green,Yellow}
+enum color{Red, 
+    Green,
+    Yellow,} 
 
 // let trafficligh: color = color.Red // call procdure of enum
 
-console.log(color.Red); // 0 output
-console.log(color["Yellow"]) // 2   output
-console.log(color[2]);      // Yellow
+// console.log(color.Red); // 0 output
+// console.log(color["Yellow"]) // 2   output
+// console.log(color[2]);      // Yellow
+
+//----------------------------------------------for chaning thw index address---------------------------------------
+// Note enum main index address change hosakta hai , hum jis bhi value ka address change karengy agly value ka address khud contiue kardega if we change middle value index so typescript provide address to value like this.
 
 
+enum color1{Red, 
+    Green = 2,
+    Yellow,} // 2 put for change index address now Red=0 , Green ko hum ny =2 dediye to yellow,03 hojaye ga.
+
+// let trafficligh: color = color.Red // call procdure of enum
+
+// console.log(color1.Red); // 0 output
+// console.log(color1["Yellow"]) //  3  output
+// console.log(color1[2]);      // Green
+
+//------------------------------------------------------------Closed-------------------------------------------------
 
 
 
