@@ -180,23 +180,23 @@
 //-------------------------------------common proties interction ek bar utha ta hai.------------------------------------------------
 //---------------------------------abhi ky case name common hai -------------------------------------------------------------------
 
-type student ={
-    name:string;
-    rollNumber:number;
-}
+// type student ={
+//     name:string;
+//     rollNumber:number;
+// }
 
-type teacher={
+// type teacher={
 
-    name:string;
-    experiance:number;
-}
+//     name:string;
+//     experiance:number;
+// }
 
 
-let both1 :student & teacher={
-    name:"zaid",
-    experiance:25,
-    rollNumber:4321,
-}
+// let both1 :student & teacher={
+//     name:"zaid",
+//     experiance:25,
+//     rollNumber:4321,
+// }
 
 //-----------------------------------------------------------New Class 11-05-2024------------------------------
 
@@ -307,4 +307,25 @@ fruits.splice(3,1)
 
 // orange and apple has been removed [ 'mango', 'kiwi', 'grapes' ]
 
-console.log(fruits);
+// console.log(fruits);
+
+//----------------------------------------class 18-05-2024---------------------------------------------------
+
+//enum // alternate typelitters union ka
+
+enum color{Red,Green,Yellow}
+
+// let trafficligh: color = color.Red // call procdure of enum
+
+console.log(color.Red); // 0 output
+console.log(color["Yellow"]) // 2   output
+console.log(color[2]);      // Yellow
+
+
+
+
+
+
+
+
+
