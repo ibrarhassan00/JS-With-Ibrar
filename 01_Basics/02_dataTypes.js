@@ -4,13 +4,14 @@
 
 let name ="ibrar" // data type string they hold texal data
 
-let age = 18 // data type number they hold numeric value
+let age = 18 // data type number they hold numeric value ( storage range 2 to power 53 )
 
 let isLoggedIn = false //data type boolean they hold ture & false
 
-let state; // data type undefine they assign nating value
+let state; // data type undefine they assign nating value >> Print undefine 
 
-let temperature = null // data type object they hold null
+let temperature = null // data type object they hold null 
+console.log(temperature) // >> null
 
 let data = BigInt("123") // data type bigint they numeric value & print value with n
 
