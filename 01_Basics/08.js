@@ -25,13 +25,15 @@ console.log(JsUser.name)    // ibrar
 console.log(JsUser["name"]) // ibrar
 console.log(JsUser["nickName"]) // y dot wale mehthode sy accses nahi hosakta q ky iski key or value 2no String hai.
 console.log(JsUser[mySym]) // agr obj main koi symbole to yese print hoga. abi hum ek new variable object ky bahir declear kia or osy obj main add karke print kia hai
+console.log(JsUser.hasOwnProperty("location")) // true
 
 JsUser.email = "ibrar.com" // value change
 JsUser.address = "abc main stree " // key & value Add
 //Object.freeze(JsUser) // ab koi change nahi hoga
 delete JsUser.address // Key & value delet 
+
 JsUser.greeting = function (){
-    return $[this.name];
+    return this.name;
 }
 
 console.log(JsUser) // nichy out put hai
@@ -62,7 +64,7 @@ const simpleObject = {
 };
 
 // JSON.stringify() method ko use karte hain
-console.log(JSON.stringify(simpleObject, null, 2)); // nichy outout hai
+//console.log(JSON.stringify(simpleObject, null, 2)); // nichy outout hai
 
 // {
 //     "name": "John",
@@ -80,6 +82,65 @@ console.log(JSON.stringify(simpleObject, null, 2)); // nichy outout hai
 // *)JSON.stringify() method object ko ek readable string format mein convert karta hai.
 // *)null parameter specify karta hai ke hum koi additional changes nahi kar rahe.
 // *)2 parameter JSON ko format karne ke liye spaces add karta hai, taake output zyada readable ho.
+
+
+const regularUser = {
+    email: "some@gmail.com",
+    fullname: {
+        userfullname: {
+            firstname: "hitesh",
+            lastname: "choudhary"
+        }
+    }
+}
+
+// console.log(regularUser.fullname.userfullname.firstname); // y obj ky nesting ko print kare ka tarika hai
+
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a", 6: "b"}
+
+// const obj3 = { obj1, obj2 } // obj ek ky under ek print hoajega ga 
+
+// const obj3 = Object.assign({}, obj1, obj2, obj4) y ek new single new object banata hai start wala ojb kahli hai sari value oske under ajati hai
+
+const obj3 = {...obj1, ...obj2} // ek new single object banata hai
+// console.log(obj3);
+
+const usersnew = [
+    {
+        id: 1,
+        email: "1h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "2h@gmail.com"
+    },
+    {
+        id: 1,
+        email: "h@gmail.com"
+    },
+]
+
+let objeNew = usersnew[1].email
+
+console.log(objeNew) // 2h@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // //------------------------object.Assign Kisi 2 y 2 sy ziada object ko murgh kerke ek new object banata hai--
@@ -182,7 +243,11 @@ Object.defineProperty(user5, 'country', {
 // writable: true matlab country property ka value change kiya ja sakta hai.
 // enumerable: true matlab ye property loops (jaise for...in) main show hogi.
 // configurable: true matlab ye property delete ya change kiya ja sakta hai.
+
+
 //---------------------------------------------------------------------------------------------------
+
+
 //Yani user object main country property add ho gayi hai aur uska value 'USA' set ho gaya hai. Ab tum is property ko access kar sakte ho:
 
 //console.log(user5.country); // Output: 'USA'
