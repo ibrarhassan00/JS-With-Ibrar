@@ -159,13 +159,52 @@ console.log(user6);
 
 //-----------------------------------------Object.setPrototypeOf:----------------------------------------
 
-// This method sets the prototype (i.e., the internal [[Prototype]] property) of a specified object to another object or null.
-// const additionalProperties = {
-//     favoriteColor: 'blue',
-//     greet: function() {
-//         console.log(`Hello, my name is ${this.name}`);
-//     }
-// };
+// Ab hum Object.setPrototypeOf ka use samajhte hain. Ye method kisi specified object ka prototype (internal [[Prototype]] property) ko dusre object ya null pe set kar deta hai.
 
-// Object.setPrototypeOf(user, additionalProperties);
-// user.greet();
+// Example ke zariye samajhte hain:
+
+// Pehle user object define karte hain
+let user = {
+    name: 'Ali',
+    age: 25
+};
+
+// Ek object define karte hain additional properties ke sath
+const additionalProperties = {
+    favoriteColor: 'blue',
+    greet: function() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+
+// Ab hum user object ka prototype additionalProperties object pe set karte hain
+Object.setPrototypeOf(user, additionalProperties);
+
+// Ab user object se greet function call karte hain
+user.greet(); //----output---Hello, my name is Ali
+
+// Is example main:
+
+// 1)user object define kiya jisme name aur age properties hain.
+// 2)additionalProperties object define kiya jisme favoriteColor property aur greet function hain.
+// 3)Object.setPrototypeOf(user, additionalProperties) ka use karke user object ka prototype additionalProperties object pe set kiya.
+// Jab hum user.greet() call karte hain, to output hoga:
+
+// Iska matlab greet function, jo additionalProperties object ka part tha, ab user object se access kiya ja sakta hai kyunki humne user ka prototype additionalProperties pe set kiya hai. Aur this.name user object ki name property ko refer karta hai.
+
+// Is tarah se tum Object.setPrototypeOf ka use karke ek object ka prototype dusre object pe set kar sakte ho, jis se wo object dusre object ke properties aur methods ko inherit kar leta hai.
+
+// ---------------------------------------------Prototype Ka Faida:--------------------------------------
+// Tum multiple objects mein common properties aur methods ko share kar sakte ho bina unhe har object mein duplicate kiye.
+// Ye inheritance ka ek tarika hai jo objects ko reusability aur flexibility deta hai.
+
+
+// ----------------------------------------------Prototype Chain:--------------------------------------
+// Jab tum kisi object ki property ya method ko access karte ho aur wo us object mein nahi milti, to JavaScript uske prototype chain mein search karti hai jab tak usse wo property ya method mil jaye ya chain end ho jaye.
+
+
+
+
+
+
+
