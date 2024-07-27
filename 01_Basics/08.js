@@ -1,3 +1,79 @@
+// constructer sy humesha single ton object banta hai 
+// hum to obj banaty hai wo obj literals hota hai.
+
+// Pehle hum ek Symbol banate hain jis ka naam hai "Key1"
+const mySym = Symbol("Key1")
+
+// Phir hum ek object banaate hain jiska naam hai JsUser
+const JsUser = {
+    // Symbol ko object ki property ke taur par use kar rahe hain
+    [mySym] : "myKey1",
+    // Baaki properties ko normal key-value pair ki tarah define kar rahe hain
+    name : "ibrar",
+    "nickName" : "hassan",
+    age : 27,
+    location : "Karachi",
+    email: "ibrarhassanansari@gamil.com",
+    isLoggedIn :false,
+}
+
+// Yahan hum Symbol ki property ki type ko console mein print kar rahe hain
+console.log(typeof JsUser[mySym]) // String
+
+//print keliye
+console.log(JsUser.name)    // ibrar 
+console.log(JsUser["name"]) // ibrar
+console.log(JsUser["nickName"]) // y dot wale mehthode sy accses nahi hosakta q ky iski key or value 2no String hai.
+console.log(JsUser[mySym]) // agr obj main koi symbole to yese print hoga. abi hum ek new variable object ky bahir declear kia or osy obj main add karke print kia hai
+
+JsUser.email = "ibrar.com" // value change
+JsUser.address = "abc main stree " // key & value Add
+//Object.freeze(JsUser) // ab koi change nahi hoga
+delete JsUser.address // Key & value delet 
+JsUser.greeting = function (){
+    return $[this.name];
+}
+
+console.log(JsUser) // nichy out put hai
+
+// {
+//   name: 'ibrar',
+//   nickName: 'hassan',
+//   age: 27,
+//   location: 'Karachi',
+//   email: 'ibrar.com',
+//   isLoggedIn: false,
+//   greeting: [Function (anonymous)],
+//   [Symbol(Key1)]: 'myKey1'
+// }
+
+console.log(JsUser.greeting());// ibrar
+
+
+//----------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // //------------------------object.Assign Kisi 2 y 2 sy ziada object ko murgh kerke ek new object banata hai--
 
 
@@ -91,7 +167,7 @@ Object.defineProperty(user5, 'country', {
     configurable: true    // Ye property delete ya change ho sakti hai
 });
 
-console.log(user5);
+// console.log(user5);
 //y out out hai--------{ country: 'USA' }
 // Is example main, humne user object main country property add ki aur usay 'USA' set kiya. Humne specify kiya ke:
 
@@ -101,17 +177,17 @@ console.log(user5);
 //---------------------------------------------------------------------------------------------------
 //Yani user object main country property add ho gayi hai aur uska value 'USA' set ho gaya hai. Ab tum is property ko access kar sakte ho:
 
-console.log(user5.country); // Output: 'USA'
+//console.log(user5.country); // Output: 'USA'
 
 // Agar tum user.country ka value change karna chaho:
 
 user5.country = 'Canada';
-console.log(user5.country); // Output: 'Canada'
+//console.log(user5.country); // Output: 'Canada'
 
 //Aur agar tumhe property ko delete karna ho:
 
 delete user5.country;
-console.log(user5); // Output: {}
+//console.log(user5); // Output: {}
 
 //------------------------------------Spread Operator:------------------------------------------------
 
@@ -127,7 +203,7 @@ let user6 = {
 // Ab hum user object main hobby property add karte hain spread operator ka use kar ke
 user6 = { ...user6, hobby: 'Reading' };
 
-console.log(user6);
+//console.log(user6);
 
 //Is example main humne pehle user object define kiya jisme name aur age properties hain. Phir humne spread operator ka use kiya ...user jo ke existing user object ki sari properties ko naya object main copy kar deta hai aur saath hi hobby property add kiya.
 
@@ -146,7 +222,7 @@ console.log(user6);
 // name property ko update karte hain aur city property add karte hain
 user6 = { ...user6, name: 'Ahmed', city: 'Lahore' };
 
-console.log(user6);
+//console.log(user6);
 
 // Ab y out put hoga
 // {
@@ -173,7 +249,7 @@ let user = {
 const additionalProperties = {
     favoriteColor: 'blue',
     greet: function() {
-        console.log(`Hello, my name is ${this.name}`);
+        //console.log(`Hello, my name is ${this.name}`);
     }
 };
 
