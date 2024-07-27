@@ -50,28 +50,36 @@ console.log(JsUser) // nichy out put hai
 console.log(JsUser.greeting());// ibrar
 
 
-//----------------------------------------------------------------------------------------------
+//-----------------------------------------------JSON.stringify()-------------------------------------
 
+const simpleObject = {
+    name: "John",
+    age: 30,
+    city: "New York",
+    greet: function() {
+        return "Hello!";
+    }
+};
 
+// JSON.stringify() method ko use karte hain
+console.log(JSON.stringify(simpleObject, null, 2)); // nichy outout hai
 
+// {
+//     "name": "John",
+//     "age": 30,
+//     "city": "New York"
+//   }
+  
+// -----------------------------------------Notes:--------------------------------------
 
+// JSON.stringify() methods aur functions ko JSON string mein include nahi karti. Isliye greet function output mein nahi dikhega.
+// JSON.stringify() sirf object ki properties aur unki values ko JSON format mein convert karta hai, functions ko nahi.
 
+//------------------------------------ Easy Way Samajhna:---------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// *)JSON.stringify() method object ko ek readable string format mein convert karta hai.
+// *)null parameter specify karta hai ke hum koi additional changes nahi kar rahe.
+// *)2 parameter JSON ko format karne ke liye spaces add karta hai, taake output zyada readable ho.
 
 
 // //------------------------object.Assign Kisi 2 y 2 sy ziada object ko murgh kerke ek new object banata hai--
