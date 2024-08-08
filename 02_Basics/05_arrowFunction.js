@@ -99,3 +99,12 @@ let addTow4= (num1,num2)=>  {return {userName:"ibrar"} }
     
 console.log(addTow4(2,5)); // { userName: 'ibrar' }
 
+
+
+let addTow5= (num1,num2)=>  ({userName:"ibrar"})
+    
+console.log(addTow5(2,5)); // { userName: 'ibrar' }
+
+// (){} , ()=>{} , ()=>()
+
+// let user = (){} , let user1 = ()=>{} , let user2 = ()=>()
